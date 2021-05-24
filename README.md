@@ -38,3 +38,7 @@ O servidor irá rodar no `http://localhost:3000/` ao executar `npm run start`.
 ```
 npm run deploy
 ```
+## Automatização de tarefas usando Gulp.js para minificar imagens do banner do site.
+```
+npm run gulp
+```
