@@ -1,6 +1,7 @@
 # Loja virtual Corebiz em React JS
 
 Uma página SPA de uma loja virtual da Corebiz feita em React JS e Redux, página responsiva que pode ser usada tanto em Desktop como em Mobile. Os produtos são listados por meio de uma API e o envio da newsletter também usa uma API teste disponibilizado pela Corebiz, além de ter validações de envio da newsletter. É possível adicionar os produtos no carrinho e removê-los também.
+O site desse projeto para demonstração está online: https://vx-charles.github.io/loja-corebiz-react/
 
 ## Versão Desktop
 <h2 align="center">
@@ -32,3 +33,7 @@ npm run start
 ```
 O servidor irá rodar no `http://localhost:3000/` ao executar `npm run start`.
 
+## Criando a build do projeto e fazendo o deploy para o Github Pages
+```
+npm run deploy
+```
