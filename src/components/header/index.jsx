@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import AddCart from '../add_cart'
-import { useSelector } from 'react-redux'
+import AddProdContext from '../../contexts/contextAddProd'
 
 import logo from '../../assets/images/header/site-logo-corebiz-preto-cinza.svg'
 import cart from '../../assets/images/header/cart.svg'
@@ -12,14 +12,7 @@ import styles from './styles.module.scss'
 
 function Header () {
 
-  // PARA ATUALIZAR OS ITENS NO CARRINHO
-  const props = useSelector(state => (
-    {
-      addCart: state.products.addCart,
-    }
-  ))
-
-  const prodStorageCount = localStorage.getItem('add_cart_corebiz') === "[]" || localStorage.getItem('add_cart_corebiz') === null ? 0 : JSON.parse(localStorage.getItem('add_cart_corebiz')).length
+  const { countCart } = useContext(AddProdContext)
 
   return (
     <header>
@@ -45,7 +38,7 @@ function Header () {
             <div className={styles.cart + " cart-global"}>
               <div className={styles.group}>
                 <img src={cart} alt="Carrinho" />
-                <span>{prodStorageCount === 'undefined' ? 0 : prodStorageCount}</span>
+                <span>{countCart}</span>
               </div>
               <AddCart />
             </div>
