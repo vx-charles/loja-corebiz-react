@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useContext, useEffect, useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { prodListApi, addCart } from '../../store/actions/prodActions'
+import { prodListApi } from '../../store/actions/prodActions'
+import AddProdContext from '../../contexts/contextAddProd'
 
 import styles from './styles.module.scss'
 import loading from '../../assets/images/products/loading-icon.svg'
@@ -9,20 +10,20 @@ import starOutline from '../../assets/images/products/star-outline-icon.svg'
 
 import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css";
-// import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 
 function Produtos() {
 
   const props = useSelector(state => (
     {
       prodList: state.products.prodList,
-      loading: state.products.loading,
-      addCart: state.products.addCart
+      loading: state.products.loading
     }
   ))
 
-  const dispatch = useDispatch({ prodListApi, addCart })
+  const dispatch = useDispatch({ prodListApi })
+  const { setCountCart } = useContext(AddProdContext)
   const initialRender = useRef(true)
+  let prodStorage = JSON.parse(localStorage.getItem('add_cart_corebiz')) || []
 
   useEffect(() => {
     if (initialRender.current) {
@@ -49,6 +50,17 @@ function Produtos() {
   const realToFormatPrice = valor => (
     'R$ ' + (valor/100).toFixed(2).replace('.',',')
   )
+  
+  const addProdStorage = (addProd) => {    
+    prodStorage = [...prodStorage, addProd]
+
+    let prodFilter = prodStorage.filter(function (a) { // Evita de add produtos iguais.
+      return !this[JSON.stringify(a)] && (this[JSON.stringify(a)] = true);
+    }, Object.create(null))
+
+    localStorage.setItem('add_cart_corebiz', JSON.stringify(prodFilter))
+    setCountCart(prodFilter.length)
+  }
 
   const prodListMap = () => (
     !props.loading ? props.prodList.map(prod => (
@@ -72,7 +84,7 @@ function Produtos() {
           <div className={styles.installments}>
             {prod.installments.length !== 0 && <p>ou em {prod.installments[0].quantity}x de {realToFormatPrice(prod.installments[0].value)}</p>}
           </div>
-          <button className={styles.buy} onClick={() => dispatch(addCart([...props.addCart, prod]))}>
+          <button className={styles.buy} onClick={() => addProdStorage(prod)}>
             Comprar
           </button>
         </div>
