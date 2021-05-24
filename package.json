@@ -2,20 +2,29 @@
   "name": "loja-corebiz",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vx-charles.github.io/loja-corebiz-react",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "loadsh": "0.0.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
     "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.33.0",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && cd node_modules && cd .bin && gh-pages -d ../../build"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +43,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "gh-pages": "^3.1.0",
+    "styled-components": "^5.3.0"
   }
 }

@@ -1,0 +1,77 @@
+@import '../../styles/global.mixins.scss';
+
+.banners {
+  display: flex;
+  position: relative;
+
+  img {
+    width: 100%;
+
+    @include sm {
+      object-fit: cover;
+      object-position: right;
+      height: 192px;
+      filter: brightness(0.5);
+    }
+
+  }
+
+  .description {
+    position: absolute;
+    top: 50%;
+    right: 55%;
+    transform: translate(0%, -50%);
+    color: var(--white);
+    width: 430px;
+    
+    @include xl {
+      width: 355px;
+    }
+
+    @include lg {
+      width: 310px;
+    }
+
+    @include md {
+      width: 205px;
+    }
+    
+    @include sm {
+      width: 62%;
+      right: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    p:first-child {
+      font-size: 28px;
+      font-weight: 700;
+
+      @include xl {
+        font-size: 22px;
+      }
+
+      @include lg {
+        font-size: 20px;
+      }
+    }
+
+    p:last-child {
+      font-size: 42px;
+      font-weight: 900;
+
+      @include xl {
+        font-size: 22px;
+      }
+
+      @include lg {
+        font-size: 20px;
+      }
+
+      @include sm {
+        font-size: 22px;
+      }
+    }
+  }
+}
