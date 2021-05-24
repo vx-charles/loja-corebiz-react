@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/loja-corebiz-react/static/css/main.83751d3d.chunk.css",
+    "main.js": "/loja-corebiz-react/static/js/main.526452cc.chunk.js",
+    "main.js.map": "/loja-corebiz-react/static/js/main.526452cc.chunk.js.map",
+    "runtime-main.js": "/loja-corebiz-react/static/js/runtime-main.7661dcc7.js",
+    "runtime-main.js.map": "/loja-corebiz-react/static/js/runtime-main.7661dcc7.js.map",
+    "static/css/2.082303d6.chunk.css": "/loja-corebiz-react/static/css/2.082303d6.chunk.css",
+    "static/js/2.4a0ab9d8.chunk.js": "/loja-corebiz-react/static/js/2.4a0ab9d8.chunk.js",
+    "static/js/2.4a0ab9d8.chunk.js.map": "/loja-corebiz-react/static/js/2.4a0ab9d8.chunk.js.map",
+    "index.html": "/loja-corebiz-react/index.html",
+    "static/css/2.082303d6.chunk.css.map": "/loja-corebiz-react/static/css/2.082303d6.chunk.css.map",
+    "static/css/main.83751d3d.chunk.css.map": "/loja-corebiz-react/static/css/main.83751d3d.chunk.css.map",
+    "static/js/2.4a0ab9d8.chunk.js.LICENSE.txt": "/loja-corebiz-react/static/js/2.4a0ab9d8.chunk.js.LICENSE.txt",
+    "static/media/banner.38f8ab40.jpg": "/loja-corebiz-react/static/media/banner.38f8ab40.jpg",
+    "static/media/cart.e1840e0b.svg": "/loja-corebiz-react/static/media/cart.e1840e0b.svg",
+    "static/media/corebiz-logo.12223451.svg": "/loja-corebiz-react/static/media/corebiz-logo.12223451.svg",
+    "static/media/envelope.8698fe83.svg": "/loja-corebiz-react/static/media/envelope.8698fe83.svg",
+    "static/media/hamburger-menu.7826b49a.svg": "/loja-corebiz-react/static/media/hamburger-menu.7826b49a.svg",
+    "static/media/headphone.fb9ed5db.svg": "/loja-corebiz-react/static/media/headphone.fb9ed5db.svg",
+    "static/media/loading-icon.4f7be162.svg": "/loja-corebiz-react/static/media/loading-icon.4f7be162.svg",
+    "static/media/search-icon.b4262fb1.svg": "/loja-corebiz-react/static/media/search-icon.b4262fb1.svg",
+    "static/media/site-logo-corebiz-preto-cinza.6ef2abf3.svg": "/loja-corebiz-react/static/media/site-logo-corebiz-preto-cinza.6ef2abf3.svg",
+    "static/media/slick-theme.css": "/loja-corebiz-react/static/media/slick.c94f7671.ttf",
+    "static/media/star-fill-icon.3737530e.svg": "/loja-corebiz-react/static/media/star-fill-icon.3737530e.svg",
+    "static/media/star-outline-icon.a0301fad.svg": "/loja-corebiz-react/static/media/star-outline-icon.a0301fad.svg",
+    "static/media/user-icon.e8de1442.svg": "/loja-corebiz-react/static/media/user-icon.e8de1442.svg",
+    "static/media/vtex-logo.2fbcbc49.svg": "/loja-corebiz-react/static/media/vtex-logo.2fbcbc49.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7661dcc7.js",
+    "static/css/2.082303d6.chunk.css",
+    "static/js/2.4a0ab9d8.chunk.js",
+    "static/css/main.83751d3d.chunk.css",
+    "static/js/main.526452cc.chunk.js"
+  ]
+}
