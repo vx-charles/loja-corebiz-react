@@ -93,9 +93,13 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    width: 100%;
+    width: 110%;
     top: -30px;
     background: var(--gray-100);
+
+    @include lg {
+      height: calc(100% + 45px);
+    }
 
     p:first-child {
       font-size: 14px;
@@ -110,7 +114,7 @@
     }
 
     button {
-      padding: 0 40px;
+      padding: 16px 40px;
       border-radius: 5px;
       border: 0;
       background: var(--black);
