@@ -24,6 +24,7 @@ O site desse projeto para demonstração está online: https://vx-charles.github
   - [SASS](https://www.npmjs.com/package/sass)
   - [React Slick](https://react-slick.neostack.com/docs/get-started)
   - [Axios](https://www.npmjs.com/package/axios)
+  - [Gulp](https://www.npmjs.com/package/gulp)
 
 <br />
 
@@ -38,7 +39,7 @@ O servidor irá rodar no `http://localhost:3000/` ao executar `npm run start`.
 ```
 npm run deploy
 ```
-## Automatização de tarefas usando Gulp.js para minificar imagens do banner do site.
+## Automatização de tarefas usando Gulp.js para minificar imagens do site.
 ```
 npm run gulp
 ```
